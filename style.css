@@ -238,11 +238,11 @@ a { color: inherit; }
   content: ""; position: absolute; left: 27px; top: 10px; bottom: 10px;
   width: 2px; background: linear-gradient(var(--gold), var(--green-800));
 }
-.timeline li {
+.timeline > li {
   position: relative; padding: 0 0 38px 84px; counter-increment: step;
 }
-.timeline li:last-child { padding-bottom: 0; }
-.timeline li::before {
+.timeline > li:last-child { padding-bottom: 0; }
+.timeline > li::before {
   content: counter(step, decimal-leading-zero);
   position: absolute; left: 0; top: -4px;
   width: 56px; height: 56px; border-radius: 50%;
@@ -394,8 +394,8 @@ a { color: inherit; }
   .grid-2, .grid-3, .grid-4, .values-grid { grid-template-columns: 1fr; }
   .section { padding: 64px 0; }
   .hero { padding: 80px 0 90px; }
-  .timeline li { padding-left: 72px; }
-  .timeline li::before { width: 48px; height: 48px; }
+  .timeline > li { padding-left: 72px; }
+  .timeline > li::before { width: 48px; height: 48px; }
   .timeline::before { left: 23px; }
 }
 
