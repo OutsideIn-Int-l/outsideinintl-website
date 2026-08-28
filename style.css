@@ -550,3 +550,11 @@ a { color: inherit; }
 
 .gallery-grid.teaser { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 720px) { .gallery-grid.teaser { grid-template-columns: repeat(2, 1fr); } }
+
+/* two-line nav label */
+.nav .nav-2line { line-height: 1.15; text-align: center; padding-top: 2px; padding-bottom: 2px; }
+.nav .nav-2line span { display: block; }
+@media (max-width: 720px) {
+  .nav .nav-2line { text-align: left; }
+  .nav .nav-2line span { display: inline; margin-left: 4px; }
+}
