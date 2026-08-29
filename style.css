@@ -558,3 +558,9 @@ a { color: inherit; }
   .nav .nav-2line { text-align: left; }
   .nav .nav-2line span { display: inline; margin-left: 4px; }
 }
+
+/* South-West state cards */
+.state-card .pillar-letter { font-size: 1.6rem; }
+.mini-list.sites { columns: 2; column-gap: 22px; }
+.mini-list.sites li { break-inside: avoid; margin-bottom: 4px; }
+@media (max-width: 720px) { .mini-list.sites { columns: 1; } }
